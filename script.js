@@ -1,0 +1,1 @@
+const calorieCounter = document.getElementById('calorieCounter');
