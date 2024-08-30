@@ -7,5 +7,7 @@ let output = document.getElementById('output');
 let isError = false;
 
 function cleanInputString(str) {
-    const regex = /hello/;
+    const regex = /[+-\s]/g;
+    // const regex = /[^0-9]/g;
+    return str.replace(regex, '');
  };
