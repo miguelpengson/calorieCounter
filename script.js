@@ -11,9 +11,13 @@ function cleanInputString(str) {
     const regex = /[+-\s]/g;
     // const regex = /[^0-9]/g;
     return str.replace(regex, '');
- };
+ }
 
  function isInvalidInput(str) {
     const regex = /\d+e\d+/i;
     return str.match(regex);
- };
+ }
+
+ function addEntry() {
+    const targetId = "#" + entryDropdown.value;
+ }
