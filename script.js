@@ -27,5 +27,5 @@ function cleanInputString(str) {
     to find an element with the class .input-container that is a direct 
     child of the element with the ID targetId.
     */
-    const targetInputContainer = document.querySelector(targetId + ' .input-container');
+    const targetInputContainer = document.querySelector(`${targetId} .input-container`);
  }
