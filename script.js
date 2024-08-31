@@ -20,4 +20,12 @@ function cleanInputString(str) {
 
  function addEntry() {
     const targetId = "#" + entryDropdown.value;
+    /*
+    targetId + ' .input-container': This part combines the targetId
+    (the ID of the parent element) with the .input-container class name.
+    The space between them is crucial because it indicates that we want
+    to find an element with the class .input-container that is a direct 
+    child of the element with the ID targetId.
+    */
+    const targetInputContainer = document.querySelector(targetId + ' .input-container');
  }
