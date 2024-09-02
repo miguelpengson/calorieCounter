@@ -23,5 +23,7 @@ function cleanInputString(str) {
     // let entryNumber = targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
     const entryNumber = targetInputContainer.querySelectorAll('input[type="text"]');
     const HTMLString = `
-    <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>`;
+    <label for="${entryDropdown.value}-${entryNumber}-name">Entry ${entryNumber} Name</label>
+    <input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name">;
+    `;
  }
