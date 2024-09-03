@@ -30,3 +30,4 @@ function cleanInputString(str) {
     `;
     targetInputContainer.innerHTML += HTMLString;
  }
+ addEntryButton.addEventListener("click", addEntry);
