@@ -28,6 +28,6 @@ function cleanInputString(str) {
     <label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber} Calories</label>
     <input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories"> 
     `;
-    targetInputContainer.insertAdjacentElement();
+    targetInputContainer.insertAdjacentElement("beforeend", HTMLString);
  }
  addEntryButton.addEventListener("click", addEntry);
