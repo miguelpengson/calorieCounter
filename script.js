@@ -37,7 +37,12 @@ function cleanInputString(str) {
       const currVal = cleanInputString(item.value);
       const invalidInputMatch = isInvalidInput(currVal);
       if (invalidInputMatch) {
+         alert(`Invalid input: ${invalidInputMatch[0]}`);
+         isError = true;
+         return null;
    }
+      calories += Number(currVal);
    }
+   return calories;
  }
  addEntryButton.addEventListener("click", addEntry);
