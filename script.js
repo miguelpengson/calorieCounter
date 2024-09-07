@@ -55,7 +55,7 @@ function cleanInputString(str) {
    const remainingCalories = budgetCalories - consumedCalories + exerciseCalories;
 
    const surplusOrDeficit = remainingCalories < 0 ? "Surplus" : "Deficit";
-   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}"></span>`;
+   output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${remainingCalories} Calories ${surplusOrDeficit}</span>`;
  }
 
  function getCaloriesFromInputs(list) {
