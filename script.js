@@ -104,8 +104,7 @@ function getCaloriesFromInputs(list) {
   return calories;
 }
 
-calorieCounter.addEventListener("submit", calculateCalories);
-clearButton.addEventListener("click", clearForm);
+
 
 function addEntry() {
   const targetInputContainer = document.querySelector(
@@ -150,3 +149,4 @@ function clearForm() {
 addEntryButton.addEventListener("click", addEntry);
 calorieCounter.addEventListener("submit", calculateCalories);
 clearButton.addEventListener("click", clearForm);
+
